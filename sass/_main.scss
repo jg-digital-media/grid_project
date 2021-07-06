@@ -144,7 +144,10 @@ body {
 
             h3 {
 
-                font-size: 2em;
+                font-size: 2em;   
+                text-decoration: underline;
+                text-decoration-thickness: 5px;
+                margin-bottom: 15px;
 
             }
 
@@ -336,6 +339,12 @@ body {
                     text-decoration:  none;
                 }
             }
+        }
+
+        #previous_grid_project {
+            width: 72%;
+            display: block;
+            margin: 10px auto;
         }
     }
 
