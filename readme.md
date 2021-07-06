@@ -1,5 +1,5 @@
 # JGDM Grid Project
-**Last update:** 06-07-2021: 13:05
+**Last update:** 06-07-2021: 14:08
 
 
 ## About this project.
@@ -12,6 +12,7 @@ The third uses grid areas to assign a more custom layout to child elements of a 
 
 Grid is turned off on mobile screens where a 1 column layout is preferred where possible.
 
+
 ## Setup
 
 + Create a Project root directory in your system ```mkdir create_a_project_root```.
@@ -23,11 +24,14 @@ Grid is turned off on mobile screens where a 1 column layout is preferred where 
 
 + This project is run on Git, GitHub and Ruby Sass
 
-  + Make sure you're in a CLI and have the above technologies installed.
+  + Make sure you're in a CLI (Such as Git Bash, Powershell or Terminal) and have the above technologies installed.
 
-  + In the project root directory type ```sass --watch style.scss:style.css```
+  + In the project root directory type ```sass --watch style.scss:style.css```.
 
   + To switch between sass partials go into the style.scss partial and switch out the relevant sass partial file and note the differences. 
+
+  + The explanations for the differences in the grid styling used, visit the ```code.html``` page.
+
 
 ## Example Partials
 
@@ -36,5 +40,11 @@ Grid is turned off on mobile screens where a 1 column layout is preferred where 
 + grid_row.scss
 + template_columns.scss
 
-## changelog
+
+## Change Log
+
+
+
+v1
+  + Added information for template columns, grid order and grid row.
 
