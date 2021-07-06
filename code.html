@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- Meta Tags -->
+    <meta name="description" content="">
+    <meta name="keywords" content=""> 
+    <meta name="image" content="">
+
+    <!-- FACEBOOK: Open Graph -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://projects.jonniegrieve.co.uk/code.html">
+
+    <!-- TWITTER: Open Graph -->
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:card" content="css_grid_project">
+
+    <!-- Canonical link -->
+    <link rel="canonical" href="https://projects.jonniegrieve.co.uk/code.html">
+
+    
+
+    <!-- Google Font 
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Odibee+Sans|Quicksand&display=swap" rel="stylesheet">-->
+
+
+    <title>CSS Grid Project | Jonnie Grieve Digital Media</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <header>        
+
+        <h1>CSS Grid</h1>
+        
+        <nav>
+            <ul class="main-nav">
+                <li><a href="grid.html" title="Home" class="nav-link">Grid</a></li>
+                <li><a href="code.html" title="About" class="nav-link">Code</a></li>
+                <li><a href="links.html" title="Link" class="nav-link">Links</a></li>
+            </ul>
+
+        </nav>    
+    
+    </header>    
+
+    <a href="index.html"><img src="img/grid_logo_v1.png" id="grid_logo" class="grid_logo" alt="placeholder logo" title="placeholder logo" /></a>
+
+    <h2>CSS Grid in Code</h2>
+
+    <section class="page_wrapper">
+
+        <h3><code>@import "template_columns.scss"</code> Grid Template Columns</h3>        
+   
+        <div class="code_block">
+
+            <img src="img/template_columns.png" class="snippet_image" alt="Grid Order" title="Grid Order" />
+
+            <p>rows of 3 items. Where there is no space on a line it rolls over onto the next lime.  Where there is no element to go into a grid space it is somply left clear with no need to floats or float clearing. </p>
+
+        </div>
+
+
+        <h3><code>@import "grid_order.scss"</code> Grid order</h3>
+        
+        <div class="code_block">
+
+            <img src="img/grid_order.png" class="snippet_image" alt="Grid Order" title="Grid Order" />
+
+            <p>For this to work, I have set up a sass partial file that replicates the selectors for the book_descriptons class element, removed the grid area, assigned template columns and used the order property with a number of 1-6 on the grid items. <br /><br />
+                The inherit property... </p>
+
+        </div>
+
+
+       <h3><code>@import "grid_row.scss"</code> Grid Row</h3>
+
+        <div class="code_block">
+
+            <img src="img/grid_row.png" class="snippet_image" alt="Grid Order" title="Grid Order" />
+
+            <p>Grid Row property sets the size of a grid item and its location in the grid. They are designed to specify on which row to start displaying the item and on how many rows  to top or span the content of the grid. <br /><br />
+
+            There are 2 properties for grid grow. They can be short handed to 2 integer values. <br /><br />
+                
+            A shorthand property of 1/4 seems to span the 3 rows that the rest of the grid items make up.  Each other grid item has been given a grid-are of inherit to account for the default grid areas. </p>
+
+        </div>
+
+         <!-- <h3>Explicit and Implicit Grid</h3>
+        
+
+        <div class="code_block">
+
+            <img src="img/grid_order.png" class="snippet_image" alt="Grid Order" title="Grid Order" />
+
+            <p>lorem</p>
+
+        </div>
+
+        <h3>Repeat Notation</h3>
+        
+
+        <div class="code_block">
+
+            <img src="img/grid_order.png" class="snippet_image" alt="Grid Order" title="Grid Order" />
+
+            <p>lorem</p>
+
+        </div>
+
+        <h3>Grid Areas</h3>
+        
+
+        <div class="code_block">
+
+            <img src="img/grid_order.png" class="snippet_image" alt="Grid Order" title="Grid Order" />
+
+            <p>lorem</p>
+
+        </div>
+
+        <h3>Grid and CSS Media Queries</h3>
+        
+
+        <div class="code_block">
+
+            <img src="img/grid_order.png" class="snippet_image" alt="Grid Order" title="Grid Order" />
+
+            <p>lorem</p>
+
+        </div>
+
+        <code>with Grid template areas</code>
+
+        <h3>Nested Grids</h3>
+        
+
+        <div class="code_block">
+
+            <img src="img/grid_order.png" class="snippet_image" alt="Grid Order" title="Grid Order" />
+
+            <p>lorem</p>
+
+        </div>
+
+        <h3>minmax() </h3>
+        
+
+        <div class="code_block">
+
+            <img src="img/grid_order.png" class="snippet_image" alt="Grid Order" title="Grid Order" />
+
+            <p>lorem</p>
+
+        </div>
+
+        <h3>Grid Box Alignment - justify-self</h3>
+        
+
+        <div class="code_block">
+
+            <img src="img/grid_order.png" class="snippet_image" alt="Grid Order" title="Grid Order" />
+
+            <p>lorem</p>
+
+        </div> -->
+
+
+    </section>
+
+    <footer>&copy; 2021 Jonnie Grieve Digital Media.</footer>
+
+    </body></html>
