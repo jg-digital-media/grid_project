@@ -1,5 +1,5 @@
 # JGDM Grid Project
-**Last update:** 06-07-2021: 08:51
+**Last update:** 06-07-2021: 09:22
 
 ## Setup
 
@@ -7,3 +7,12 @@
 
 + Create a Project root directory ```mkdir create_a_project_root```.
 
+
+## Example Partials
+
++ grid_areas.scss
++ grid_order.scss
++ grid_row.scss
++ template_columns.scss
+
+To switch between sass partials go into the style.scss partial and switch out the relevent sass partial file and note the differences. 
