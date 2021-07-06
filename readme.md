@@ -1,5 +1,5 @@
 # JGDM Grid Project
-**Last update:** 06-07-2021: 12:06
+**Last update:** 06-07-2021: 12:11
 
 
 ## About this project.
@@ -23,7 +23,7 @@ Grid is turned off on mobile screens where a 1 column layout is preferred where 
 
 + This project is run on Git, GitHub and Ruby Sass
 
-  + Nake sure you're in a CLI and have the above techlogies installed.
+  + Make sure you're in a CLI and have the above technologies installed.
 
   + In the project root directory type ```sass --watch style.scss:style.css```
 
