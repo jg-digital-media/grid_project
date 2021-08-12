@@ -1,22 +1,26 @@
 /*
-
+*
+* Grid Row Partial
 */
+
 body {
 
-    .book_descriptions {
+    .book_descriptions {  
+        
+        display: grid;
+        grid-template-areas: none;
+        grid-template-columns: 1fr 1fr 1fr;
 
-    
+        .featured {
+            text-align: center;
+            margin: 5px;
+            border-bottom: solid red;
+        }      
 
         .one {
             //grid-row: 1/2;
             grid-area: inherit;
             grid-row: 1/4;
-        }
-        
-        .featured {
-            text-align: center;
-            margin: 5%;
-            border-bottom: solid red;
         }
         
         .two {
@@ -49,18 +53,6 @@ body {
         
         }
         
-        .book {            
-            /*  width: 100px; */
-            background: $bg-secondary;
-            padding: 20px;
-            margin: 5px;
-            border-radius: 15px;
-            box-shadow: black 0px 0px 11px;
-        
-            h3 {
-                color: black;
-            }
-        }
     }
 
 }

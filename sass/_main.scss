@@ -5,8 +5,7 @@
 
 body {
     background: $bg-body;
-    font-family: $font;
-    font-weight: bold;
+    font-family: $font-secondary;
 
     header {
         width: 100%;
@@ -50,6 +49,7 @@ body {
     
                         &:hover {
                             text-decoration: none;
+                            color: $col-nav-href-hov;
                         }
                     }
                 }
@@ -83,6 +83,14 @@ body {
         margin-bottom: 30px;
     }
 
+    .how_it_works {
+        margin: 25px 0px;
+
+        li {
+            margin-top: 10px;
+        }
+    }
+
 
     .grid_container {
 
@@ -102,7 +110,7 @@ body {
    
         .about-grid {
 
-            width: 260px;
+            width: 150px;
 
             @media (max-width: $md) {
                 line-height: 2.4;
@@ -144,10 +152,7 @@ body {
 
             h3 {
 
-                font-size: 2em;   
-                text-decoration: underline;
-                text-decoration-thickness: 5px;
-                margin-bottom: 15px;
+                font-size: 2em;
 
             }
 
@@ -166,7 +171,7 @@ body {
         }
     }
 
-    //uses grid areas
+    //Styling the Grid Areas - Website Homepage
     .book_descriptions {
         display: grid;
         width: $width-lg;
@@ -271,26 +276,35 @@ body {
         
         h3 {
             line-height: 2;
-            margin-top: 10px;
+            margin-top: 30px;
 
             code {
                 display: block;
-                padding: 4px;
-                background: lighten($bg-secondary, 6%);
-                width: 320px;
-                border-radius: 10px;
-                box-shadow: #504e4e 4px 3px 4px;
             }
+
+        }
+
+        code {
+            @extend %code_highlighting;
+
+        }
+
+        code.code_block_header {
+            
+            background: #fbe69c;
+            font-weight: bold;
+            font-style: italic;
+            border-radius: 4px;
+            min-width: 200px;
+            padding-left: 10px;
 
         }
 
         .code_block {
             display: grid;
             grid-template-columns: minmax(320px, 417px) 1fr;
-
-            border-bottom: black solid 2px;
-            margin-bottom: 15px;
-            padding-bottom: 20px;
+            
+            /* grid-gap: 20px;*/
 
             @media (max-width: 760px) { 
                 display: flex;
@@ -299,7 +313,11 @@ body {
             }
 
             .snippet_image {
-                border-radius: 15px;;
+                border-radius: 14px;
+            }
+
+            code {
+                @extend %code_highlighting
             }
 
 
@@ -326,31 +344,19 @@ body {
             }
         }
 
-        #source_links {
-
-            list-style: circle;
-
-            li {
-                line-height: 1.6;
-            }
-            a {
-                color: black;
-                &:hover {
-                    text-decoration:  none;
-                }
-            }
+        ul.list_of_links {
+                list-style: none;
         }
 
-        #previous_grid_project {
-            width: 72%;
-            display: block;
-            margin: 10px auto;
+        code {
+            @extend %code_highlighting
+
         }
     }
 
 
     footer {
-            margin-top: 15px;
+            margin-top: 10px;
             text-align: center;
     }
 }

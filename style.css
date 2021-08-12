@@ -1,10 +1,6 @@
 /*
+CSS GRID PROJECT - 12-08-2021 - 14:31
 
-CSS GRID PROJECT
-
-*/
-/**
-* Sass config and main style file
 */
 * {
   padding: 0;
@@ -12,8 +8,7 @@ CSS GRID PROJECT
 
 body {
   background: #e0f446;
-  font-family: "Dosis", sans-serif;
-  font-weight: bold; }
+  font-family: "Barlow Semi Condensed", sans-serif; }
   body header {
     width: 100%;
     height: 85px;
@@ -40,7 +35,8 @@ body {
           body header nav ul.main-nav li a {
             color: #ffffff; }
             body header nav ul.main-nav li a:hover {
-              text-decoration: none; }
+              text-decoration: none;
+              color: gold; }
       body header nav hr {
         width: 40px;
         text-align: center;
@@ -55,6 +51,10 @@ body {
     color: #464444;
     text-align: center;
     margin-bottom: 30px; }
+  body .how_it_works {
+    margin: 25px 0px; }
+    body .how_it_works li {
+      margin-top: 10px; }
   body .grid_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -68,7 +68,7 @@ body {
         margin: 0 auto;
         width: 90%; } }
     body .grid_container .about-grid {
-      width: 260px; }
+      width: 150px; }
       @media (max-width: 760px) {
         body .grid_container .about-grid {
           line-height: 2.4;
@@ -97,10 +97,7 @@ body {
         line-height: 1.4;
         margin-bottom: 15px; }
       body article.sub_grid .main-content h3 {
-        font-size: 2em;
-        text-decoration: underline;
-        text-decoration-thickness: 5px;
-        margin-bottom: 15px; }
+        font-size: 2em; }
     @media (max-width: 760px) {
       body article.sub_grid .main-items div.item {
         line-height: 1.6; } }
@@ -163,27 +160,27 @@ body {
         flex-direction: row-reverse; } }
     body .page_wrapper h3 {
       line-height: 2;
-      margin-top: 10px; }
+      margin-top: 30px; }
       body .page_wrapper h3 code {
-        display: block;
-        padding: 4px;
-        background: #f9e5be;
-        width: 320px;
-        border-radius: 10px;
-        box-shadow: #504e4e 4px 3px 4px; }
+        display: block; }
+    body .page_wrapper code.code_block_header {
+      background: #fbe69c;
+      font-weight: bold;
+      font-style: italic;
+      border-radius: 4px;
+      min-width: 200px;
+      padding-left: 10px; }
     body .page_wrapper .code_block {
       display: grid;
       grid-template-columns: minmax(320px, 417px) 1fr;
-      border-bottom: black solid 2px;
-      margin-bottom: 15px;
-      padding-bottom: 20px; }
+      /* grid-gap: 20px;*/ }
       @media (max-width: 760px) {
         body .page_wrapper .code_block {
           display: flex;
           flex-direction: column-reverse;
           padding: 5px; } }
       body .page_wrapper .code_block .snippet_image {
-        border-radius: 15px; }
+        border-radius: 14px; }
   body .grid_page {
     display: block;
     width: 50%;
@@ -197,57 +194,64 @@ body {
       body .grid_page table caption {
         font-style: italic;
         font-size: 12px; }
-    body .grid_page #source_links {
-      list-style: circle; }
-      body .grid_page #source_links li {
-        line-height: 1.6; }
-      body .grid_page #source_links a {
-        color: black; }
-        body .grid_page #source_links a:hover {
-          text-decoration: none; }
-    body .grid_page #previous_grid_project {
-      width: 72%;
-      display: block;
-      margin: 10px auto; }
+    body .grid_page ul.list_of_links {
+      list-style: none; }
   body footer {
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: center; }
 
-/**
-* Example partials Select a partial file to import. 
-*/
+body .page_wrapper code, body .page_wrapper .code_block code, body .grid_page code {
+  padding: 3px 8px;
+  background: #f2bbbb;
+  font-weight: bold;
+  font-style: italic;
+  border-radius: 7px; }
+
 /*
-
+*
+* Grid Justify Self Partial
 */
-body .book_descriptions .one {
-  grid-area: inherit;
-  grid-row: 1/4; }
-body .book_descriptions .featured {
-  text-align: center;
-  margin: 5%;
-  border-bottom: solid red; }
-body .book_descriptions .two {
-  grid-area: inherit; }
-body .book_descriptions .three {
-  grid-area: inherit; }
-body .book_descriptions .four {
-  grid-area: inherit; }
-body .book_descriptions .five {
-  grid-area: inherit; }
-body .book_descriptions .six {
-  grid-area: inherit; }
-body .book_descriptions .seven {
-  grid-area: inherit; }
-body .book_descriptions .book {
-  /*  width: 100px; */
-  background: #f7d9a2;
-  padding: 20px;
-  margin: 5px;
-  border-radius: 15px;
-  box-shadow: black 0px 0px 11px; }
-  body .book_descriptions .book h3 {
-    color: black; }
+body .book_descriptions {
+  display: grid;
+  grid-template-areas: none;
+  grid-template-columns: repeat(3, 1fr); }
+  body .book_descriptions .featured {
+    text-align: center;
+    margin: 5%;
+    border-bottom: solid red; }
+  body .book_descriptions .one {
+    grid-area: inherit;
+    justify-self: center;
+    grid-row: 1/4;
+    grid-column: 1/4; }
+  body .book_descriptions .two {
+    grid-area: inherit;
+    justify-self: stretch; }
+  body .book_descriptions .three {
+    grid-area: inherit;
+    justify-self: stretch; }
+  body .book_descriptions .four {
+    grid-area: inherit;
+    justify-self: stretch; }
+  body .book_descriptions .five {
+    grid-area: inherit;
+    justify-self: stretch; }
+  body .book_descriptions .six {
+    grid-area: inherit;
+    justify-self: stretch; }
+  body .book_descriptions .seven {
+    grid-area: inherit;
+    justify-self: stretch; }
+  body .book_descriptions .book {
+    /*  width: 100px; */
+    background: #f7d9a2;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: black 0px 0px 11px; }
+    body .book_descriptions .book h3 {
+      color: black; }
 
-/* Still to come */
+/* Still to Come */
 
 /*# sourceMappingURL=style.css.map */
