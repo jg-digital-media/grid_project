@@ -1,5 +1,5 @@
 # JGDM Grid Project
-**Last update:** 12-08-2021: 15:31
+**Last update:** 18-08-2021: 09:02
 
 
 ## About this project.
@@ -12,7 +12,7 @@ The third uses grid areas to assign a more custom layout to child elements of a 
 
 Grid is turned off on mobile screens where a 1 column layout is preferred where possible.   
 
-You can visit the URL for this website at <a href="https://projects.jonniegrieve.co.uk/grid_project" target="blank">https://projects.jonniegrieve.co.uk/grid_project"</a>
+You can visit the URL for this website at <a href="https://projects.jonniegrieve.co.uk/grid_project" target="blank">https://projects.jonniegrieve.co.uk/grid_project</a>
 
 ## Using the site
 
