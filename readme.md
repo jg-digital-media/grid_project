@@ -10,7 +10,9 @@ The homepage for this website is divided into 3 sections of elements, each defin
 
 The third uses grid areas to assign a more custom layout to child elements of a grid area.
 
-Grid is turned off on mobile screens where a 1 column layout is preferred where possible.
+Grid is turned off on mobile screens where a 1 column layout is preferred where possible.   
+
+You can visit the URL for this website at https://projects.jonniegrieve.co.uk/grid_project
 
 ## Using the site
 
