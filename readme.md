@@ -1,5 +1,5 @@
 # JGDM Grid Project
-**Last update:** 18-08-2021: 09:02
+**Last update:** 16-02-2022: 12:35  **v3**
 
 
 ## About this project.
@@ -64,6 +64,10 @@ You can visit the URL for this website at <a href="https://projects.jonniegrieve
 
 
 ## Change Log
+
+
+v3
+* updated notes
 
 v2
 + Added example partial images
