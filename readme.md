@@ -74,16 +74,17 @@ You can visit the URL for this website at <a href="https://projects.jonniegrieve
 
 ## Change Log
 [Back to Top](#sections)
-v4 
-* additions  to notes and setup instructions
 
-v3
-* updated notes
++ v4 
+  + additions  to notes and setup instructions
 
-v2
-+ Added example partial images
-+ Added
-  + template_columns.scss";
++ v3
+  + updated notes
+
++ v2
+  + Added example partial images
+  + Added
+    + template_columns.scss";
     + grid_order.scss";
     + grid_row.scss";
     + grid_implicit.scss";
@@ -93,6 +94,6 @@ v2
 + Added index.html to main navigation
 
 
-v1
++ v1
   + Added information for template columns, grid order and grid row.
 
