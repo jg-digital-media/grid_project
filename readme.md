@@ -1,20 +1,28 @@
 # JGDM Grid Project
-**Last update:** 16-02-2022: 12:35  **v3**
+**Last Update:** 21-04-2022: 11:08  **v4**
+
+## **Sections**
+
+  + [About this Project](#about-this-project)
+  + [Using the Site](#using-the-site)
+  + [Setup](#setup)
+  + [Example Partials](#example-partials)
+  + [Still to Come](#still-to-come)
 
 
-## About this project.
+## About this Project
 
-My CSS Grid website started out as a simple re-design of a project I first made in 2017. I got to work on the redesign and the ideas kind of snowballed from there. I've turned it into a cloneable repository so anyone can use it and inspect it if they so wish.
+My CSS Grid website started out as a simple re-design of a project I first made in 2017. I got to work on the redesign and the ideas kind of snowballed from there. I've turned it into a cloneable repository so anyone can use it, inspect it and it if they so wish.
 
 The homepage for this website is divided into 3 sections of elements, each defined as a CSS Grid. The first 2 use ```grid-template-columns``` to lay out the "*grid item*" elements.
 
-The third uses grid areas to assign a more custom layout to child elements of a grid area.
+The third uses Grid Areas to assign a more custom layout to child elements of a grid area.
 
 Grid is turned off on mobile screens where a 1 column layout is preferred where possible.   
 
 You can visit the URL for this website at <a href="https://projects.jonniegrieve.co.uk/grid_project" target="blank">https://projects.jonniegrieve.co.uk/grid_project</a>
 
-## Using the site
+## Using the Site
 
 + This project is run on Git, GitHub and Ruby Sass
 
@@ -34,11 +42,11 @@ You can visit the URL for this website at <a href="https://projects.jonniegrieve
 
 + To use this project you will need a CSS compiler and a text editor.
 
-+ Use `sass --watch style.scss:style.css` to operate sass and make changes to SASS Code.
++ Use `sass --watch style.scss:style.css` to operate Sass and make changes to Sass Code.
 
-+ Open a sass partial text file. e.g. `grid_areas.scss`
++ Open a sass partial text file. e.g. `grid_areas.scss`.
 
-+ Swap out the import file and review the changes made to `index.html`
++ Swap out the import file and review the changes made to `index.html`.
 
 + Go to `code.html` for more information about what is happening with each sass partial.
 
@@ -46,25 +54,27 @@ You can visit the URL for this website at <a href="https://projects.jonniegrieve
 ## Example Partials
 
 
-+ template_columns.scss";
-+ grid_order.scss";
-+ grid_row.scss";
-+ grid_implicit.scss";
-+ repeat_notation.scss";
-+ minmax.scss";
-+ justify_self.scss";
++ `template_columns.scss`
++ `grid_order.scss`
++ `grid_row.scss`
++ `grid_implicit.scss`
++ `repeat_notation.scss`
++ `minmax.scss`
++ `justify_self.scss`
 
 
 
 ## Still to Come */
 
-+ grid_areas.scss";
-+ media_queries.scss";
-+ nested.scss";
++ `grid_areas.scss`
++ `media_queries.scss`
++ `nested.scss`
 
 
 ## Change Log
 
+v4 
+* additions  to notes and setup instructions
 
 v3
 * updated notes
