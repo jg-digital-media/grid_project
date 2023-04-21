@@ -23,6 +23,7 @@ Grid is turned off on mobile screens where a 1 column layout is preferred where 
 You can visit the URL for this website at <a href="https://projects.jonniegrieve.co.uk/grid_project" target="blank">https://projects.jonniegrieve.co.uk/grid_project</a>
 
 ## Using the Site
+[Back to Top](#sections)
 
 + This project is run on Git, GitHub and Ruby Sass
 
@@ -35,7 +36,7 @@ You can visit the URL for this website at <a href="https://projects.jonniegrieve
   + The explanations for the differences in the grid styling used are available on the ```code.html``` page.
 
 ## Setup
-
+[Back to Top](#sections)
 + Create a Project root directory in your system ```mkdir create_a_project_root```.
 
 + Clone Repository to your system with Git Version Control installed. - ```git clone https://github.com/jg-digital-media/jgdm_grid_project.git```.
@@ -52,7 +53,7 @@ You can visit the URL for this website at <a href="https://projects.jonniegrieve
 
 
 ## Example Partials
-
+[Back to Top](#sections)
 
 + `template_columns.scss`
 + `grid_order.scss`
@@ -64,15 +65,15 @@ You can visit the URL for this website at <a href="https://projects.jonniegrieve
 
 
 
-## Still to Come */
-
+## Still to Come 
+[Back to Top](#sections)
 + `grid_areas.scss`
 + `media_queries.scss`
 + `nested.scss`
 
 
 ## Change Log
-
+[Back to Top](#sections)
 v4 
 * additions  to notes and setup instructions
 
